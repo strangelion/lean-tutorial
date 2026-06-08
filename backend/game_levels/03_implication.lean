@@ -1,0 +1,1 @@
+-- Goal: prove ∀ α : Prop, α → α

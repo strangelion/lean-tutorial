@@ -1,0 +1,1 @@
+-- Goal: prove n + 0 = n for all natural numbers n

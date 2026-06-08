@@ -1,0 +1,17 @@
+node_modules/
+.next/
+__pycache__/
+*.pyc
+.env
+.venv/
+dist/
+
+# Project docs and agent configs (local only)
+CLAUDE.md
+AGENTS.md
+**/CLAUDE.md
+**/AGENTS.md
+
+# System files
+Thumbs.db
+.DS_Store
