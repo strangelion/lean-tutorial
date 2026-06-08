@@ -31,7 +31,7 @@ const LESSONS: Record<string, LessonMeta> = {
     slug: "01-intro",
     title: "欢迎来到 Lean",
     order: 1,
-    duration: "约 15 分钟",
+    duration: "约 5 分钟",
     introduction:
       "欢迎！这是你的第一个 Lean 证明。\n\n"
       + "Lean 是一种**交互式定理证明器**——你可以像写代码一样写数学证明，"
@@ -71,7 +71,7 @@ const LESSONS: Record<string, LessonMeta> = {
     slug: "02-types",
     title: "类型与命题",
     order: 2,
-    duration: "约 25 分钟",
+    duration: "约 5 分钟",
     introduction:
       "上一关我们证明了「S → S」，但 S 是什么？为什么 S 既是「类型」又是「命题」？\n\n"
       + "在 Lean 里，**命题就是类型**。`P ∧ Q → P` 这个命题，"
@@ -112,7 +112,7 @@ const LESSONS: Record<string, LessonMeta> = {
     slug: "03-implication",
     title: "蕴涵与全称量词",
     order: 3,
-    duration: "约 30 分钟",
+    duration: "约 5 分钟",
     introduction:
       "数学中我们常说「对任意 x，都有 ...」。这在 Lean 里用 **∀** 表示。\n\n"
       + "本关要证明一个「显然」的命题：**任意命题 α，α → α**。\n"
@@ -149,7 +149,7 @@ const LESSONS: Record<string, LessonMeta> = {
     slug: "04-conjunction",
     title: "合取与双向蕴涵",
     order: 4,
-    duration: "约 30 分钟",
+    duration: "约 10 分钟",
     introduction:
       "数学里经常要证明「A 当且仅当 B」。在 Lean 里这写成 `A ↔ B`。\n\n"
       + "`P ↔ Q` 其实就是 `(P → Q) ∧ (Q → P)` 的简写"
@@ -194,7 +194,7 @@ const LESSONS: Record<string, LessonMeta> = {
     slug: "05-induction",
     title: "归纳法入门",
     order: 5,
-    duration: "约 45 分钟",
+    duration: "约 10 分钟",
     introduction:
       "数学归纳法是形式化证明中最强大的武器。\n\n"
       + "本关目标：**对所有自然数 n，n + 0 = n**。\n"

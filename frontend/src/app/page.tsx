@@ -8,7 +8,7 @@ const LESSONS = [
     order: 1,
     description:
       "什么是形式化证明？Lean 能做什么？在浏览器中体验你的第一个证明。",
-    duration: "约 15 分钟",
+    duration: "约 5 分钟",
   },
   {
     slug: "02-types",
@@ -16,7 +16,7 @@ const LESSONS = [
     order: 2,
     description:
       "一切皆有类型。理解 Type 和 Prop，用 #check 探索类型世界。",
-    duration: "约 25 分钟",
+    duration: "约 5 分钟",
   },
   {
     slug: "03-implication",
@@ -24,7 +24,7 @@ const LESSONS = [
     order: 3,
     description:
       "学习 intro、apply 策略，掌握 → 和 ∀ 的证明方法。",
-    duration: "约 30 分钟",
+    duration: "约 5 分钟",
   },
   {
     slug: "04-conjunction",
@@ -32,7 +32,7 @@ const LESSONS = [
     order: 4,
     description:
       "学习 constructor、cases 策略，掌握 ∧ 和 ∃ 的证明方法。",
-    duration: "约 30 分钟",
+    duration: "约 10 分钟",
   },
   {
     slug: "05-induction",
@@ -40,7 +40,7 @@ const LESSONS = [
     order: 5,
     description:
       "数学归纳法的形式化：induction 策略、rfl 和 rw 重写。",
-    duration: "约 45 分钟",
+    duration: "约 10 分钟",
   },
 ];
 
