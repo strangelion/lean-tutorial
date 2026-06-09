@@ -7,20 +7,20 @@ const lesson: LessonMeta = {
   duration: "约 30 分钟",
   introduction:
     "数学中我们常说「对任意 x，都有 ...」。这在 Lean 里用 **∀** 表示。\n\n"
-    + "本关要证明一个「显然」的命题：**任意命题 α，α → α**。\n"
-    + "说白了就是：不管 α 是什么命题，如果 α 成立，那么 α 成立。\n\n"
-    + "这里出现了两个量词：`∀ α : Prop` 和 `α → α`。\n"
+    + "本关要证明一个「显然」的命题：**对任意命题 a，a → a**。\n"
+    + "说白了就是：不管 a 是什么命题，如果 a 成立，那么 a 成立。\n\n"
+    + "这里出现了两个量词：`∀ a : Prop` 和 `a → a`。\n"
     + "有趣的是，**intro 对两者都管用**——你马上会看到。",
-  goal: "∀ α : Prop, α → α",
+  goal: "∀ a : Prop, a → a",
   hypotheses: [],
-  initialCode: "example : ∀ α : Prop, α → α :=\n  by",
+  initialCode: "example : ∀ a : Prop, a → a :=\n  by",
   hints: [
-    "用 `intro α` 引入命题变量 α。这一步相当于说「取任意一个命题，叫它 α」。",
-    "现在目标变成了 `α → α`。和第一关一样，用 `intro h` 引入前提 h: α。",
-    "目标变成了 α，手里有 h: α，用 `exact h` 完成。",
+    "用 `intro a` 引入命题变量 a。这一步相当于说「取任意一个命题，叫它 a」。",
+    "现在目标变成了 `a → a`。和第一关一样，用 `intro h` 引入前提 h: a。",
+    "目标变成了 a，手里有 h: a，用 `exact h` 完成。",
   ],
   solution:
-    "example : ∀ α : Prop, α → α :=\n  by\n    intro α\n    intro h\n    exact h",
+    "example : ∀ a : Prop, a → a :=\n  by\n    intro a\n    intro h\n    exact h",
   conclusion:
     "好极了！\n\n"
     + "你发现了：**intro 既能处理 → 也能处理 ∀**。\n"
@@ -33,7 +33,7 @@ const lesson: LessonMeta = {
   ],
   newConcepts: [
     { name: "全称量词 (∀)", desc: "「对所有」——∀ x, P(x) 表示对任意 x，P(x) 成立" },
-    { name: "Prop 宇宙", desc: "α : Prop 说明 α 也是命题，intro 可以引入任意类型" },
+    { name: "Prop 宇宙", desc: "a : Prop 说明 a 是一个命题，intro 可以引入任意类型" },
   ],
 };
 

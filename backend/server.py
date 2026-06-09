@@ -41,6 +41,7 @@ def run_lean_code(code: str) -> dict:
                 capture_output=True,
                 text=True,
                 timeout=30,
+                env={**__import__("os").environ, "ELAN_NO_UPDATE_CHECK": "1"},
             )
             stdout = result.stdout
             stderr = result.stderr
