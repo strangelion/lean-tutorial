@@ -1,0 +1,1 @@
+-- Goal: prove (-a) * b = -(a * b) in a ring

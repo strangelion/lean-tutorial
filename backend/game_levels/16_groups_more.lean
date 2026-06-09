@@ -1,0 +1,1 @@
+-- Goal: prove a * b = a * c → b = c (left cancellation)

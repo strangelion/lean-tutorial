@@ -86,6 +86,14 @@ npm run dev
 | 8 | apply：反向推理的艺术 | apply、反向推理、传递性 | 约 30 分钟 |
 | 9 | simp：让机器帮你化简 | simp、Nat.add_succ、自动化简 | 约 25 分钟 |
 | 10 | 否定与反证法 | ¬ = → False、换质换位律 | 约 30 分钟 |
+| 11 | 集合的基本操作 | Set α、∈、⊆、extensionality | 约 35 分钟 |
+| 12 | 集合的运算与性质 | ∪、∩、ext、交集的交换律 | 约 30 分钟 |
+| 13 | 函数与映射 | Injective、Surjective、have | 约 35 分钟 |
+| 14 | 群的定义与基本性质 | Mul、Inv、One、calc、notation | 约 40 分钟 |
+| 15 | 子群与子群判定 | IsSubgroup、refine、交集子群 | 约 35 分钟 |
+| 16 | 群的更多性质 | 消去律，calc 等式推导 | 约 35 分钟 |
+| 17 | 环的定义与基本性质 | Ring、0*a=0、分配律 | 约 40 分钟 |
+| 18 | 环的更多性质 | (-a)*b=-(a*b)、符号规则 | 约 30 分钟 |
 
 ## 技术栈
 
@@ -121,7 +129,6 @@ npm run build:cloudflare
 npx wrangler pages deploy out/ --project-name lean-tutorial
 ```
 
-部署后通过 https://lean-tutorial.pages.dev 访问。
 离线模拟引擎在前端完全可用，Cloudflare 部署无需后端。
 
 > **注意：** Cloudflare 部署只包含前端静态文件，不支持 WebSocket 后端。

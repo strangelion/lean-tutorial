@@ -1,0 +1,1 @@
+-- Goal: prove IsSubgroup (H₁ ∩ H₂)

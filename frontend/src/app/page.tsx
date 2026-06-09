@@ -2,7 +2,7 @@ import Link from "next/link";
 import LessonList from "@/components/LessonList";
 import ProgressBadge from "@/components/ProgressBadge";
 
-const TOTAL_LESSONS = 10;
+const TOTAL_LESSONS = 18;
 
 export default function HomePage() {
   return (

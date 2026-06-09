@@ -48,6 +48,22 @@ function simulateLean(code: string): LeanResult {
     /0\s*\+\s*\w+\s*=\s*\w+[\s\S]*induction[\s\S]*simp/,
     // Lesson 10: contrapositive, intro intro intro apply apply exact
     /¬[\s\S]*intro\s+hpq[\s\S]*intro\s+hnq[\s\S]*intro\s+hP[\s\S]*apply\s+hnq[\s\S]*apply\s+hpq[\s\S]*exact\s+hP/,
+    // Lesson 11: A ⊆ A self-inclusion
+    /A\s*⊆\s*A[\s\S]*intro\s+x[\s\S]*intro\s+hx[\s\S]*exact\s+hx/,
+    // Lesson 12: A ∩ B = B ∩ A via ext
+    /A\s*∩\s*B\s*=\s*B\s*∩\s*A[\s\S]*ext\s+x[\s\S]*constructor/,
+    // Lesson 13: injective composition
+    /Injective\s+g[\s\S]*Injective\s+f[\s\S]*Injective\s*\(f\s*[∘]\s*g\)[\s\S]*intro\s+hg[\s\S]*intro\s+hf[\s\S]*have\s+\w+[\s\S]*exact\s+hg/,
+    // Lesson 14: a⁻¹ * (a * b) = b via calc
+    /a⁻¹\s*\*\s*\(a\s*\*\s*b\)\s*=\s*b[\s\S]*calc[\s\S]*mul_assoc[\s\S]*mul_inv_left[\s\S]*one_mul/,
+    // Lesson 15: subgroup intersection
+    /one\s*∈\s*\(H₁\s*∩\s*H₂\)[\s\S]*refine\s*⟨\?_,\s*\?_,\s*\?_⟩/,
+    // Lesson 16: left cancellation a*b = a*c → b = c
+    /a\s*\*\s*b\s*=\s*a\s*\*\s*c\s*[→]\s*b\s*=\s*c[\s\S]*calc[\s\S]*one_mul[\s\S]*mul_inv_left/,
+    // Lesson 17: 0 * a = 0 in rings
+    /0\s*\*\s*a\s*=\s*0[\s\S]*right_distrib[\s\S]*add_neg[\s\S]*add_assoc/,
+    // Lesson 18: (-a) * b = -(a * b)
+    /\(\s*-\s*a\s*\)\s*\*\s*b\s*=\s*-\s*\(\s*a\s*\*\s*b\s*\)[\s\S]*right_distrib[\s\S]*add_comm[\s\S]*add_neg/,
   ];
 
   for (const pattern of validPatterns) {

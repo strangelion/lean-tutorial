@@ -29,6 +29,14 @@ import lesson07 from "./07-exists";
 import lesson08 from "./08-apply";
 import lesson09 from "./09-simp";
 import lesson10 from "./10-negation";
+import lesson11 from "./11-sets";
+import lesson12 from "./12-set-ops";
+import lesson13 from "./13-functions";
+import lesson14 from "./14-groups-intro";
+import lesson15 from "./15-subgroups";
+import lesson16 from "./16-groups-more";
+import lesson17 from "./17-rings-intro";
+import lesson18 from "./18-rings-more";
 
 const LESSONS: Record<string, LessonMeta> = {
   "01-intro": lesson01,
@@ -41,6 +49,14 @@ const LESSONS: Record<string, LessonMeta> = {
   "08-apply": lesson08,
   "09-simp": lesson09,
   "10-negation": lesson10,
+  "11-sets": lesson11,
+  "12-set-ops": lesson12,
+  "13-functions": lesson13,
+  "14-groups-intro": lesson14,
+  "15-subgroups": lesson15,
+  "16-groups-more": lesson16,
+  "17-rings-intro": lesson17,
+  "18-rings-more": lesson18,
 };
 
 export function getLesson(slug: string | undefined): LessonMeta | undefined {

@@ -1,0 +1,1 @@
+-- Goal: prove 0 * a = 0 in a ring

@@ -1,0 +1,1 @@
+-- Goal: Injective g → Injective f → Injective (f ∘ g)

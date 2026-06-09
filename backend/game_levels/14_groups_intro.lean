@@ -1,0 +1,1 @@
+-- Goal: prove a⁻¹ * (a * b) = b in a group
