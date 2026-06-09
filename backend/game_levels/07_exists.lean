@@ -1,0 +1,1 @@
+-- Goal: prove ∃ n : Nat, n + 0 = 0

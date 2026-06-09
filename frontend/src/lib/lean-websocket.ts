@@ -28,16 +28,26 @@ function simulateLean(code: string): LeanResult {
 
   // Common Lean 4 beginner proof patterns — accept known-correct proofs
   const validPatterns = [
-    // S -> S, intro + exact
+    // Lesson 01: S -> S, intro + exact
     /example\s*:\s*S\s*[→]\s*S\s*:=\s*\n\s*by\s*\n\s*intro\s+\w+\s*\n\s*exact\s+\w+/,
-    // P /\ Q -> P, intro + rcases + exact
+    // Lesson 02: P /\ Q -> P, intro + rcases + exact
     /intro\s+\w+\s*\n\s*(?:rcases\s+\w+\s+with\s+[⟨(]\w+,\s*\w+[⟩)])\s*\n\s*exact\s+\w+/,
-    // forall a : Prop, a -> a
+    // Lesson 03: forall a : Prop, a -> a
     /∀\s*\w+\s*:\s*Prop,\s*\w+\s*[→]\s*\w+[\s\S]*intro\s+\w+\s*\n\s*intro\s+\w+\s*\n\s*exact\s+\w+/,
-    // P /\ Q <-> Q /\ P, constructor
+    // Lesson 04: P /\ Q <-> Q /\ P, constructor
     /P\s*∧\s*Q\s*[↔]\s*Q\s*∧\s*P[\s\S]*constructor/,
-    // n + 0 = n, induction
+    // Lesson 05: n + 0 = n, induction
     /n\s*\+\s*0\s*=\s*n[\s\S]*induction\s+\w+\s+with/,
+    // Lesson 06: P \/ Q -> Q \/ P, rcases with | and left/right
+    /P\s*∨\s*Q\s*[→]\s*Q\s*∨\s*P[\s\S]*rcases[\s\S]*\|\s*\w+[\s\S]*(?:left|right)/,
+    // Lesson 07: exists n, n + 0 = 0, refine with angle brackets
+    /∃\s*\w+\s*:\s*Nat[\s\S]*refine\s*[⟨(]\s*0/,
+    // Lesson 08: P -> R with apply, hpq + hqr + hP
+    /apply\s+hqr\s*\n\s*apply\s+hpq\s*\n\s*exact\s+hP/,
+    // Lesson 09: 0 + n = n, induction + simp
+    /0\s*\+\s*\w+\s*=\s*\w+[\s\S]*induction[\s\S]*simp/,
+    // Lesson 10: contrapositive, intro intro intro apply apply exact
+    /¬[\s\S]*intro\s+hpq[\s\S]*intro\s+hnq[\s\S]*intro\s+hP[\s\S]*apply\s+hnq[\s\S]*apply\s+hpq[\s\S]*exact\s+hP/,
   ];
 
   for (const pattern of validPatterns) {

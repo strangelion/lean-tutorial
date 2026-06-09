@@ -24,6 +24,11 @@ import lesson02 from "./02-types";
 import lesson03 from "./03-implication";
 import lesson04 from "./04-conjunction";
 import lesson05 from "./05-induction";
+import lesson06 from "./06-or";
+import lesson07 from "./07-exists";
+import lesson08 from "./08-apply";
+import lesson09 from "./09-simp";
+import lesson10 from "./10-negation";
 
 const LESSONS: Record<string, LessonMeta> = {
   "01-intro": lesson01,
@@ -31,6 +36,11 @@ const LESSONS: Record<string, LessonMeta> = {
   "03-implication": lesson03,
   "04-conjunction": lesson04,
   "05-induction": lesson05,
+  "06-or": lesson06,
+  "07-exists": lesson07,
+  "08-apply": lesson08,
+  "09-simp": lesson09,
+  "10-negation": lesson10,
 };
 
 export function getLesson(slug: string | undefined): LessonMeta | undefined {

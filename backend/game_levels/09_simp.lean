@@ -1,0 +1,1 @@
+-- Goal: prove ∀ n : Nat, 0 + n = n

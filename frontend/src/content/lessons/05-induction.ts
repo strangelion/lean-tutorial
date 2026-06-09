@@ -34,17 +34,19 @@ const lesson: LessonMeta = {
     + "    | succ n ih =>\n"
     + "      rw [Nat.add_succ, ih]",
   conclusion:
-    "恭喜！你完成了全部五节课！\n\n"
-    + "你掌握了 Lean 4 证明的核心策略：\n"
+    "做得漂亮！你已经掌握了 Lean 4 证明的核心策略：\n\n"
     + "- **intro / exact** — 处理 → 和 ∀\n"
     + "- **rcases / ⟨⟩** — 拆解和构造 ∧\n"
     + "- **constructor** — 处理 ↔\n"
     + "- **induction** — 数学归纳法\n"
     + "- **rw / rfl** — 等式重写和定义等式\n\n"
-    + "接下来你可以做什么？\n"
-    + "1. 安装 VS Code + Lean 4，在自己的电脑上写证明\n"
-    + "2. 去 [Mathematics in Lean](https://leanprover-community.github.io/mathematics_in_lean/) 学习更多\n"
-    + "3. 玩 [Natural Number Game](https://adam.math.hhu.de/) 挑战更多关卡",
+    + "接下来还有五课等着你：\n"
+    + "- **析取 ∨** — 「或」的证明与使用\n"
+    + "- **存在量词 ∃** — 「存在」的证明\n"
+    + "- **apply** — 反向推理的核心策略\n"
+    + "- **simp** — 更智能的自动化简\n"
+    + "- **¬ 与反证法** — 否定的处理\n\n"
+    + "休息一下，还是继续下一课？",
   newTactics: [
     { name: "induction", desc: "数学归纳法。对 Nat 自动生成 zero 和 succ 两个分支" },
     { name: "rw", desc: "等式重写。用已知等式替换表达式中的一部分" },
