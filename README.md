@@ -156,7 +156,7 @@ conda env remove -n lean-tutorial
 ```
 
 > **为什么用 conda 而不是 venv？**
-> 这个项目约定 Python 虚拟环境统一用 conda，保持团队一致。
+> 这个项目约定 Python 虚拟环境统一用 conda，保持团队一致。venv 自然也可以在本地使用。
 
 ## 常见问题
 
