@@ -172,4 +172,4 @@ Monaco Editor 首次加载需要下载，等几秒即可。如果一直空白，
 
 ## License
 
-MIT
+GNU General Public License v3.0
