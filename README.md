@@ -104,6 +104,29 @@ docker compose up --build
 # 后端: ws://localhost:8000/ws
 ```
 
+## Cloudflare Pages 部署
+
+前端是纯静态站点，可直接部署到 Cloudflare Pages：
+
+```bash
+cd frontend
+
+# 登录 Cloudflare（只需一次）
+npx wrangler login
+
+# 构建静态文件
+npm run build:cloudflare
+
+# 部署
+npx wrangler pages deploy out/ --project-name lean-tutorial
+```
+
+部署后通过 https://lean-tutorial.pages.dev 访问。
+离线模拟引擎在前端完全可用，Cloudflare 部署无需后端。
+
+> **注意：** Cloudflare 部署只包含前端静态文件，不支持 WebSocket 后端。
+> 如需完整后端功能，请使用 Docker 部署。
+
 ## conda 快速入门
 
 conda 是 Python 的虚拟环境管理器，让每个项目有独立的 Python 和包。

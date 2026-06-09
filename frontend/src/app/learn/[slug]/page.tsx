@@ -11,6 +11,8 @@ import { getProgress, markLessonCompleted } from "@/lib/progress";
 import type { UserProgress } from "@/lib/progress";
 import { getAllLessons, getLesson, type LessonMeta } from "@/content/lessons";
 
+// generateStaticParams is in layout.tsx (server component)
+
 const LESSON_LIST = getAllLessons();
 
 export default function LessonPage() {
